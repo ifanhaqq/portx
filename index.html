@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanifan Haqin</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Ensure the shapes cover the screen if necessary */
+    body {
+      position: relative;
+      background: #170202;
+    }
+  </style>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
+
+</head>
+
+<body class="bg-gray-900">
+  <!-- Navigation Start-->
+  <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+    <nav class="flex items-center justify-center space-x-4 bg-gray-900/70 backdrop-blur-md border border-cyan-100 rounded-full px-8 py-3 
+   ">
+      <a href="#home"
+        class="text-white hover:text-cyan-300 px-3 transition-transform transform hover:scale-110 hover:text-cyan-300 ">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" width="24" height="24"
+            viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+          </svg>
+        </span>
+      </a>
+      <a href="#about"
+        class="text-white hover:text-cyan-300 px-3 transition-transform transform hover:scale-110 hover:text-cyan-300">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" width="24" height="24"
+            viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
+          </svg>
+        </span>
+      </a>
+      <a href="#project"
+        class="text-white hover:text-cyan-300 px-3 transition-transform transform hover:scale-110 hover:text-cyan-300">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" width="24" height="24"
+            viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z" />
+          </svg>
+        </span>
+      </a>
+      <a href="#contact"
+        class="text-white hover:text-cyan-300 px-3 transition-transform transform hover:scale-110 hover:text-cyan-300">
+        <span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" width="24" height="24"
+            viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+          </svg>
+        </span>
+      </a>
+    </nav>
+  </header>
+  <!-- Navigation End-->
+
+  <!-- Home Start -->
+  <section id="home" class="h-[100vh]">
+    <div class="relative w-full  h-screen flex justify-center items-center bg-gray-900">
+      <!-- Shape 1 -->
+      <div
+        class="absolute top-0 left-0 w-[100px] h-[100px] lg:w-[400px] lg:h-[400px] bg-blue-700 blur-xl lg:blur-3xl   rounded-full">
+      </div>
+      <div
+        class="absolute top-10 left-10 w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] bg-violet-500 blur-xl lg:blur-3xl opacity-50 rounded-full">
+      </div>
+
+
+      <!-- Shape 2 -->
+      <div
+        class="absolute bottom-0 right-0 w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] blur-xl bg-blue-500 lg:blur-3xl opacity-40 rounded-full">
+      </div>
+      <div
+        class="absolute bottom-0 right-10 w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] bg-yellow-200  blur-xl lg:blur-3xl opacity-40 rounded-full">
+      </div>
+      <!-- Page Content -->
+
+      <div class=" relative text-center z-10">
+        <div class=" text-4xl font-bold text-gray-100 mb-6">
+          <h1 class="text-5xl lg:text-8xl font-bold text-gray-100  ">
+            <span
+              class="block text-2xl lg:text-3xl font-base text-left bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text text-transparent">Backend</span>
+            <span class="block text-sky-100 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+              Developer</span>
+            <span class="block text-sm   font-medium text-right mt-4">Hanifan Haqin</span>
+          </h1>
+          <div class="w-full mt-20">
+            <button type="button" class="rounded-full bg-transparent bg-blur-3xl border border-violet-900 ring-2 ring-cyan-200
+           text-xl font-light text-white px-4 py-2
+            hover:text-2xl hover:text-sky-100 hover:ring-2 hover:ring-violet-300"> My Resume</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Home End -->
+
+  <!-- About Start -->
+  <section id="about" class="h-[100vh] flex items-center  justify-center bg-gray-900">
+    <div class="text-white mx-auto px-8 lg:w-1/2 ">
+      <div class="flex space-x-3 mb-10 items-center ">
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">IfanHaq
+        </h1>
+        <a href="">
+          <span class="flex  ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="fill-current"
+              viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <p class="text-base leading-relaxed">with strong foundation in
+        <span
+          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text text-transparent ">software
+          engineering major</span> at
+        <span
+          class="text-lg font-medium bg-gradient-to-r from-cyan-100 to-violet-300 bg-clip-text text-transparent">Politeknik
+          Negeri Indramayu</span>.
+        Have quite a lot of experience in
+        <span
+          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-rose-300 bg-clip-text text-transparent">various</span>
+        projects on campus where I got to explore my passion for
+        <span
+          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-neutral-300 bg-clip-text text-transparent">backend
+          and mobile development</span>.
+      </p>
+    </div>
+  </section>
+  <!-- About End -->
+  <!-- Project Start -->
+  <section id="project" class="bg-gray-900">
+    <div class="space space--small"></div>
+    <div class="text-white mx-auto px-8 lg:w-1/2 ">
+      <div class="flex space-x-3 mb-10 items-center ">
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">
+          Project
+        </h1>
+        <span class="text-2xl">🚀</span>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="cards px-4 w-full lg:w-1/2 lg:mx-auto">
+      <div class="card border border-violet-400 rounded-xl" data-index="0">
+        <div class="card__inner">
+
+          <div class="card__content">
+            <h1 class="card__title lg:text-3xl">Card Title</h1>
+            <p class="card__description lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
+              error nam eaque. Eum fuga laborum quos expedita iste saepe
+              similique, unde possimus quia at magnam sed cupiditate?
+              Reprehenderit, harum!
+            </p>
+          </div>
+          <div class="mb-5 m-4 my-auto  lg:block">
+            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
+          rounded-full">More</button>
+          </div>
+        </div>
+      </div>
+      <div class="card border border-violet-400 rounded-xl" data-index="0">
+        <div class="card__inner">
+
+          <div class="card__content">
+            <h1 class="card__title lg:text-3xl">Card Title</h1>
+            <p class="card__description lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
+              error nam eaque. Eum fuga laborum quos expedita iste saepe
+              similique, unde possimus quia at magnam sed cupiditate?
+              Reprehenderit, harum!
+            </p>
+          </div>
+          <div class="mb-5  m-4 my-auto lg:block">
+            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
+          rounded-full">More</button>
+          </div>
+        </div>
+      </div>
+      <div class="card border border-violet-400 rounded-xl" data-index="0">
+        <div class="card__inner">
+          <div class="card__content">
+            <h1 class="card__title lg:text-3xl">Card Title</h1>
+            <p class="card__description lg:text-lg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
+              error nam eaque. Eum fuga laborum quos expedita iste saepe
+              similique, unde possimus quia at magnam sed cupiditate?
+              Reprehenderit, harum!
+            </p>
+          </div>
+          <div class="mb-5  m-4 my-auto lg:block">
+            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
+          rounded-full">More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+  </section>
+  <!-- Project End -->
+
+  <!-- Tech Stack Start-->
+  <section id="tech-stack " class="flex  h-screen justify-center items-center bg-gray-900 md:w-1/2 mx-auto ">
+    <div >
+      <div class="w-full px-4 ">
+        <p class="text-slate-400">Developing Tools</p>
+        <h1 class="text-white text-2xl lg:mb-10">Skills</h1>
+
+        <ul class="border border-slate-400 rounded-xl relative mt-1 my-4 px-2 py-4 list-none">
+          <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+            <div
+              class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+            </div>
+            <div class="text-white">Backend Development</div>
+            <div class="flex  flex-wrap mt-5  text-slate-200">
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Laravel
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Java Spring Boot
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                NodeJS
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Express Js
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Prisma ORM
+              </span>
+            </div>
+          </li>
+          <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+            <div
+              class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+            </div>
+            <div class="text-white">Mobile</div>
+            <div class="flex  flex-wrap mt-5  text-slate-200">
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Flutter
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                React Native
+              </span>
+            </div>
+          </li>
+          <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+            <div
+              class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+            </div>
+            <div class="text-white">Frontend Development</div>
+            <div class="flex  flex-wrap mt-5  text-slate-200">
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Flutter
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                React Native
+              </span>
+            </div>
+          </li>
+          <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+            <div
+              class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+            </div>
+            <div class="text-white">Data Base</div>
+            <div class="flex  flex-wrap mt-5  text-slate-200">
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                PostgreSql
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Laragon
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Xampp
+              </span>
+            </div>
+          </li>
+          <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+            <div
+              class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+            </div>
+            <div class="text-white">Service</div>
+            <div class="flex  flex-wrap mt-5  text-slate-200">
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Postman
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Laragon
+              </span>
+              <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+                Xampp
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <!-- Tech Stack End-->
+
+  <!-- Contact Start -->
+  <section id="contact" class="h-screen flex items-center justify-center mx-auto md:w-1/2">
+    <div class="w-full text-white px-4  ">
+      <div class=" bg-white/20 backdrop-blur-xl rounded-xl  py-4">
+        <h1 class="text-2xl  font-medium text-slate-50 text-center">Contact me!</h1>
+        <p class="text-lg font-light text-slate-100  text-center">if you wanna know more✌️</p>
+        <form action="">
+          <div class="w-full px-4  py-2 rounded-xl ">
+            <div class=" ">
+              <label for="name" class="block text-sm font-light text-sm text-slate-50 mb-2">Name</label>
+              <input type="text" name="name" id="name"
+                class="w-full bg-white border border-violet-400 ring-1 ring-cyan-700 bg-white/50   rounded-lg px-2 py-1 text-white">
+            </div>
+          </div>
+          <div class="w-full px-4  py-2 rounded-xl ">
+            <div class=" ">
+              <label for="email" class="block text-sm font-light text-sm text-slate-50 mb-2">Email</label>
+              <input type="text" name="email" id="email"
+                class="w-full bg-white border border-violet-400 ring-1 ring-cyan-700 bg-white/50   rounded-lg px-2 py-1 text-white">
+            </div>
+          </div>
+          <div class="w-full px-4  py-2 rounded-xl ">
+            <div class=" ">
+              <label for="message" class="block text-sm font-light text-sm text-slate-50 mb-2">Message</label>
+              
+           <textarea name="message" id="message " type="text" name="email" id="email"
+           class="w-full bg-white border border-violet-400 ring-1 ring-cyan-700 bg-white/50   rounded-lg
+            px-2 py-1 text-white" placeholder="type your message here...">
+
+           </textarea>
+              </div>
+          </div>
+          <div class="w-full px-4  py-2 ">
+            <button type="submit" class="w-full bg-gradient-to-r from-gray-700 to-gray-500 rounded-full py-2
+            text-white ring ring-cyan-400 border border-gray-400 hover:bg-cyan-400">
+              Send 🏃‍♀️‍➡️
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Contact End -->
+
+
+  <!-- Script -->
+  <!-- Navbar Toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    })
+  </script>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+
+
+    const { ScrollObserver, valueAtPercentage } = aat
+
+    const cardsContainer = document.querySelector('.cards')
+    const cards = document.querySelectorAll('.card')
+    cardsContainer.style.setProperty('--cards-count', cards.length)
+    cardsContainer.style.setProperty(
+      '--card-height',
+      `${cards[0].clientHeight}px`
+    )
+    Array.from(cards).forEach((card, index) => {
+      const offsetTop = 20 + index * 20
+      card.style.paddingTop = `${offsetTop}px`
+      if (index === cards.length - 1) {
+        return
+      }
+      const toScale = 1 - (cards.length - 1 - index) * 0.1
+      const nextCard = cards[index + 1]
+      const cardInner = card.querySelector('.card__inner')
+      ScrollObserver.Element(nextCard, {
+        offsetTop,
+        offsetBottom: window.innerHeight - card.clientHeight
+      }).onScroll(({ percentageY }) => {
+        cardInner.style.scale = valueAtPercentage({
+          from: 1,
+          to: toScale,
+          percentage: percentageY
+        })
+        cardInner.style.filter = `brightness(${valueAtPercentage({
+          from: 1,
+          to: 0.6,
+          percentage: percentageY
+        })})`
+      })
+    })
+  </script>
+
+  </script>
+</body>
+
+</html>
