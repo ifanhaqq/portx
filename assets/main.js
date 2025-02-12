@@ -43,4 +43,17 @@ Array.from(cards).forEach((card, index) => {
     })})`
   })
 })
-// CURSOR 
+// SECTIONS PROJECT
+
+const sectionsParam = new URLSearchParams(window.location.search);
+const projectId = sectionsParam.get("id");
+
+if (projectId) {
+  const section = document.getElementById('project-${projectId}');
+  if (section) {
+    section.classList.remove("hidden");
+  }
+}
+
+// PRELOADER
+ 

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hanifan Haqin</title>
   <link rel="stylesheet" href="assets/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link  href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap"
+    rel="stylesheet">
+
+  <!--  -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--  -->
   <style>
     /* Ensure the shapes cover the screen if necessary */
     body {
@@ -18,11 +27,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
-
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body class="bg-gray-900">
-
+<body class="bg-gray-900 font-['Sour_Gummy']">
+ <!-- PRELOADER -->
+ 
   <!-- Navigation Start-->
   <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
     <nav class="flex items-center justify-center space-x-4 bg-gray-900/70 backdrop-blur-md border border-cyan-100 rounded-full px-8 py-3 
@@ -72,7 +83,7 @@
   <!-- Navigation End-->
 
   <!-- Home Start -->
-  <section id="home" class="h-[100vh]">
+  <section id="home" class="h-[100vh] font-['Zen_Dots'] font-medium">
     <div class="relative   h-screen flex justify-center items-center bg-gray-900">
       <!-- Shape 1 -->
       <div
@@ -93,18 +104,24 @@
       <!-- Page Content -->
 
       <div class=" relative text-center z-10">
-        <div class=" text-4xl font-bold text-gray-100 mb-6">
-          <h1 class="text-5xl lg:text-8xl font-bold text-gray-100  ">
-            <span
-              class="block text-2xl lg:text-3xl font-base text-left bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text text-transparent">Backend</span>
+        <div class=" text-4xl font-medium text-gray-100 mb-6">
+          <h1 class="text-5xl lg:text-8xl text-gray-100  ">
+            <!-- <span class="block text-2xl lg:text-3xl font-base text-left bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text
+               text-transparent">Backend</span>
             <span class="block text-sky-100 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
-              Developer</span>
-            <span class="block text-sm   font-medium text-right mt-4">Hanifan Haqin</span>
-          </h1>
+              Developer</span> -->
+              <span id="author" class="flex-wrap text-sky-100 bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent
+              "></span>
+            </h1>
+            <span class="block text-sm   font-medium text-center mt-4" data-aos="flip-left" data-aos-delay="5000">Hanifan Haqin</span>
           <div class="w-full mt-20">
-            <button type="button" class="rounded-full bg-transparent bg-blur-3xl border border-violet-900 ring-2 ring-cyan-200
+            <button type="button" class="animate-bounce rounded-full bg-transparent bg-blur-3xl border border-violet-900 ring-2 ring-cyan-200
            text-xl font-light text-white px-4 py-2
-            hover:text-2xl hover:text-sky-100 hover:ring-2 hover:ring-violet-300"> My Resume</button>
+            hover:text-sky-100 hover:ring-2 hover:ring-violet-300">
+              <span class="transition-transform transform hover:scale-110">
+                 Resume
+              </span>
+            </button>
           </div>
 
         </div>
@@ -114,12 +131,13 @@
   <!-- Home End -->
 
   <!-- About Start -->
-  <section id="about" class="h-[100vh] flex items-center  justify-center bg-gray-900">
+  <section id="about" class="h-[100vh] flex items-center  justify-center bg-gray-900" data-aos="fade-right"
+    data-aos-delay="200">
     <div class="text-white mx-auto px-8 lg:w-1/2 ">
-      <div class="flex space-x-3 mb-10 items-center ">
+      <div class="flex space-x-3 mb-10 items-center " data-aos="fade-right" data-aos-delay="500">
         <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">IfanHaq
         </h1>
-        <a href="">
+        <a href="" data-aos="fade-right" data-aos-delay="500">
           <span class="flex  ">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" class="fill-current"
               viewBox="0 0 496 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -129,20 +147,29 @@
           </span>
         </a>
       </div>
-      <p class="text-base leading-relaxed">with strong foundation in
-        <span
-          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text text-transparent ">software
-          engineering major</span> at
-        <span
-          class="text-lg font-medium bg-gradient-to-r from-cyan-100 to-violet-300 bg-clip-text text-transparent">Politeknik
-          Negeri Indramayu</span>.
-        Have quite a lot of experience in
-        <span
-          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-rose-300 bg-clip-text text-transparent">various</span>
-        projects on campus where I got to explore my passion for
-        <span
-          class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-neutral-300 bg-clip-text text-transparent">backend
-          and mobile development</span>.
+      <p class="text-base leading-relaxed" data-aos="fade-right" data-aos-delay="1000">with strong foundation in
+        <span class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-yellow-300 bg-clip-text text-transparent "
+          data-aos="fade-right" data-aos-delay="1100">software
+          engineering major</span>
+        <span data-aos="fade-right" data-aos-delay="1150">
+          at
+        </span>
+        <span class="text-lg font-medium bg-gradient-to-r from-cyan-100 to-violet-300 bg-clip-text text-transparent"
+          data-aos="fade-right" data-aos-delay="1200">
+          Politeknik Negeri Indramayu</span>
+        <span data-aos="fade-right" data-aos-delay="1250">
+          . Have quite a lot of experience in
+        </span>
+        <span class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-rose-300 bg-clip-text text-transparent"
+          data-aos="fade-right" data-aos-delay="1300">
+          various</span>
+        <span data-aos="fade-right" data-aos-delay="1350">
+          projects on campus where I got to explore my passion for projects on campus where I got to explore my passion
+          for
+        </span>
+        <span class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-neutral-300 bg-clip-text text-transparent"
+          data-aos="fade-right" data-aos-delay="1400">
+          backend and mobile development</span>.
       </p>
     </div>
   </section>
@@ -151,7 +178,7 @@
   <section id="project" class="bg-gray-900">
     <div class="space space--small"></div>
     <div class=" text-white mx-auto px-8 lg:w-1/2 ">
-      <div class="flex   space-x-3 mb-10 items-center ">
+      <div class="flex   space-x-3 mb-10 items-center " data-aos="fade-right" data-aos-delay="200">
         <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">
           Project
         </h1>
@@ -159,72 +186,69 @@
       </div>
     </div>
     <!-- cards -->
-    <div class="cards 0 z-10 px-4 w-full lg:w-1/2 lg:mx-auto">
-
-      <div class="card border border-violet-400 rounded-xl" data-index="0">
-        <div class="card__inner">
-
+    <div class="cards 0 z-10 px-4 w-full   lg:w-1/2 lg:mx-auto" data-aos="fade-right" data-aos-delay="1000">
+      <!-- Project 1 -->
+      <div class="card   rounded-xl p-4" data-index="0">
+        <div class="card__inner flex-col items-center justify-center" >
           <div class="card__content">
-            <h1 class="card__title lg:text-3xl">Card Title</h1>
-            <p class="card__description lg:text-lg">
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">Card Title</h1>
+            <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
               error nam eaque. Eum fuga laborum quos expedita iste saepe
               similique, unde possimus quia at magnam sed cupiditate?
               Reprehenderit, harum!
             </p>
           </div>
-          <div class="mb-5 m-4 my-auto  lg:block">
-            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
-          rounded-full">More</button>
-          </div>
-        </div>
-      </div>
-      <div class="card border border-violet-400 rounded-xl" data-index="0">
-        <div class="card__inner">
 
+          <!-- Button to Open Modal -->
+          <div class="w-full mb-4 px-2">
+            <a href="project.html#project1"><button
+                class="w-full py-2 px-4 bg-gradient-to-b from-neutral-500 to-slate-700 text-white font-medium rounded-full shadow-lg hover:text-gray-600 hover:from-neutral-400">
+                More
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="card   rounded-xl p-4" data-index="0" data-aos="fade-right" data-aos-delay="1300">
+        <div class="card__inner flex-col items-center justify-center">
           <div class="card__content">
-            <h1 class="card__title lg:text-3xl">Card Title</h1>
-            <p class="card__description lg:text-lg">
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">Card Title</h1>
+            <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
               error nam eaque. Eum fuga laborum quos expedita iste saepe
               similique, unde possimus quia at magnam sed cupiditate?
               Reprehenderit, harum!
             </p>
           </div>
-          <div class="mb-5  m-4 my-auto lg:block">
-            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
-          rounded-full">More</button>
+
+          <!-- Button to Open Modal -->
+          <div class="w-full mb-4 px-2">
+            <a href="project.html?id=1"><button
+                class="w-full py-2 px-4 bg-gradient-to-b from-neutral-500 to-slate-700 text-white font-medium rounded-full shadow-lg hover:text-gray-600 hover:from-neutral-400">
+                More
+              </button>
+            </a>
           </div>
+
         </div>
       </div>
-      <div class="card border border-violet-400 rounded-xl" data-index="0">
-        <div class="card__inner">
-          <div class="card__content">
-            <h1 class="card__title lg:text-3xl">Card Title</h1>
-            <p class="card__description lg:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
-              error nam eaque. Eum fuga laborum quos expedita iste saepe
-              similique, unde possimus quia at magnam sed cupiditate?
-              Reprehenderit, harum!
-            </p>
-          </div>
-          <div class="mb-5  m-4 my-auto lg:block">
-            <button class=" w-full font-medium py-2 px-4  bg-gradient-to-b from-neutral-500 to-slate-700 text-white border border-neutral-200 
-          rounded-full">More</button>
-          </div>
-        </div>
-      </div>
+
+
     </div>
     <div class="space"></div>
   </section>
   <!-- Project End -->
 
   <!-- Tech Stack Start-->
-  <section id="tech-stack " class="flex  justify-center items-center bg-gray-900 md:w-1/2 mx-auto ">
+  <section id="tech-stack " class="flex  justify-center items-center bg-gray-900 md:w-1/2 mx-auto "
+    data-aos="fade-right" data-aos-delay="500">
 
     <div class="w-full px-4 ">
       <p class="text-slate-400">Developing Tools</p>
-      <h1 class="text-white text-2xl lg:mb-10">Skills</h1>
+      <h1 class="text-white text-2xl lg:mb-10" data-aos="flip-down" data-aos-delay="600">Expertise</h1>
 
       <ul class="border border-slate-400 rounded-xl relative mt-1 my-4 px-2 py-4 list-none">
         <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
@@ -320,15 +344,17 @@
   <!-- Tech Stack End-->
 
   <!-- Contact Start -->
-  <section id="contact" class=" my-36 flex items-center justify-center mx-auto md:w-1/2">
+  <section id="contact" class="bg-gray-900 px-4 mb-36 my-36 flex items-center justify-center mx-auto md:w-1/2"
+    data-aos="fade-right" data-aos-delay="600">
     <div class="w-full flex-col text-white px-4  bg-white/20 backdrop-blur-xl rounded-xl  py-4">
       <div class=" ">
         <h1 class="text-2xl  font-medium text-slate-50 text-center md:text-4xl">Contact me!</h1>
-        <p class="text-lg font-light text-slate-100  text-center mb-5">if you wanna know more✌️</p>
+        <p class="text-lg font-light text-slate-100  text-center mb-5">Got a interesting project? Let's collaborated✌️
+        </p>
       </div>
       <div class="  ">
         <!-- email -->
-        <a href="" class="w-full lg:1/2">
+        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="800">
           <div class="  hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -349,7 +375,7 @@
           </div>
         </a>
         <!-- githuub -->
-        <a href="" class="w-full lg:1/2">
+        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1000">
           <div class=" hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -373,7 +399,7 @@
           </div>
         </a>
         <!-- linkedin -->
-        <a href="" class="w-full lg:1/2">
+        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1200">
           <div class=" hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -402,14 +428,51 @@
   </section>
   <!-- Contact End -->
 
+<!-- Github Contributions Start -->
+ <section id="git-commit" class="h-screen bg-gray-900 px-4 mb-36 my-36 flex items-center justify-center mx-auto md:w-1/2">
+<div class="w-full bg-white px-2 py-4 rounded-xl">
+  <h1 class="text-center font-['Zen_Dots'] text-xl text-slate-600 mb-4">Git Hub Contributions</h1>
+  <img src="https://ghchart.rshah.org/ifanhaqq" alt="GitHub Contributions">
 
-  <!-- Script -->
-  <!-- Navbar Toggle -->
+</div>
+ </section>
+<!-- Github Contributions End -->
+
+<!-- Footer Start -->
+  <footer class="flex items-center justify-center mx-auto px-4 mb-4 md:w-1/2 text-center ">
+    <div class="w-full rounded-md px-4 bg-white/20 backdrop-blur-xl  text-slate-200">
+      <p class="text-sm font-light font-['Zen_Dots']">Made with 💕 by his FE spouse</p>
+    </div>
+  </footer>
+<!-- Footer End -->
+
+  <!-- Script --> 
+  <script src="assets/main.js">  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-
+    AOS.init();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+  <script>
+    // use a script tag or an external JS file
+    document.addEventListener("DOMContentLoaded", (event) => {
+      gsap.registerPlugin(TextPlugin, SplitText, CustomBounce, CustomEase)
+      // gsap code here!
+    });
+    // click to modify the underlined values
 
-  </script>
+    gsap.fromTo(
+      "#background",
+      { opacity: 0, scale: 1.1 },
+      { duration: 1, opacity: 1, scale: 1, ease: "power2.out" }
+    );
+
+    gsap.fromTo(
+      '#author', { repeat: 3, repeatDelay: 1, yoyo: true },
+      { duration: 3, text: "Backend Developer" }
+    )
+    </script>
 </body>
 
 </html>
