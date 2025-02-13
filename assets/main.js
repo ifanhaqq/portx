@@ -1,11 +1,6 @@
-// 
-// Import GSAP and  plugins
-import { gsap } from "https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js";
-import { ScrollTrigger } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js";
-import { ScrollSmoother } from "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js";
 
 // Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
  
 //  CARD
 
@@ -43,17 +38,6 @@ Array.from(cards).forEach((card, index) => {
     })})`
   })
 })
-// SECTIONS PROJECT
-
-const sectionsParam = new URLSearchParams(window.location.search);
-const projectId = sectionsParam.get("id");
-
-if (projectId) {
-  const section = document.getElementById('project-${projectId}');
-  if (section) {
-    section.classList.remove("hidden");
-  }
-}
 
 // PRELOADER
  
