@@ -1,0 +1,59 @@
+{
+    "projects": [
+        {
+            "projectId": 1,
+            "shortName": "DRAFLE",
+            "fullName": "Polindra Toefl Test Prediction",
+            "description": "This application is a website-based toefl prediction test application for the language department of Indramayu State Polytechnic which consists of two types of roles, namely the admin who can determine the test questions and of course there is also a user who acts as a person who takes the toefl test.",
+            "image": "assets/img/drafle.png",
+            "techstackImages": [
+                "assets/icon/icon-js.svg",
+                "assets/icon/icon-laravel.svg",
+                "assets/icon/icon-bootstrap.svg",
+                "assets/icon/icon-jquery.svg",
+                "assets/icon/icon-mysql.svg"
+            ]
+        },
+        {
+            "projectId": 2,
+            "shortName": "PORTALGANK",
+            "fullName": "PORTALGANK",
+            "description": "This web-based application is intended to provide a universal platform for eradicating cases of sexual violence that occur in government agencies where previously the platform was not universal or focused on each agency, or even there were agencies that did not have a platform for it at all.",
+            "image": "assets/img/portalgank.png",
+            "techstackImages": [
+                "assets/icon/icon-js.svg",
+                "assets/icon/icon-laravel.svg",
+                "assets/icon/icon-bootstrap.svg",
+                "assets/icon/icon-jquery.svg",
+                "assets/icon/icon-mysql.svg"
+            ]
+        },
+        {
+            "projectId": 3,
+            "shortName": "PetaniTech",
+            "fullName": "PetaniTech Web App",
+            "description": "This system is a multiplatform system consisting of mobile applications and websites. The Website Application is used by the admin to help various existing problems that may be experienced by farmers in using the application.",
+            "image": "assets/img/web.png",
+            "techstackImages": [
+                "assets/icon/icon-js.svg",
+                "assets/icon/icon-laravel.svg",
+                "assets/icon/icon-bootstrap.svg",
+                "assets/icon/icon-jquery.svg",
+                "assets/icon/icon-mysql.svg",
+                "assets/icon/icon-mqtt.svg"
+            ]
+        },
+        {
+            "projectId": 4,
+            "shortName": "PetaniTech",
+            "fullName": "PetaniTech Mobile App",
+            "description": "This system is a multiplatform system consisting of mobile applications and websites. Mobile applications are used to help farmers determine the planting period and monitor their land.",
+            "image": "assets/img/mobile.png",
+            "techstackImages": [
+                "assets/icon/icon-js.svg",
+                "assets/icon/icon-react.svg",
+                "assets/icon/icon-mqtt.svg"
+            ]
+        }
+    ]
+}

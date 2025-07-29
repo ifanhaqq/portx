@@ -39,5 +39,14 @@ Array.from(cards).forEach((card, index) => {
   })
 })
 
+function downloadResume() {
+  const link = document.createElement('a');
+    link.href = 'my-cv.pdf';
+    link.download = 'Hanifan Haqin.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 // PRELOADER
  

@@ -9,7 +9,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link  href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap"
     rel="stylesheet">
 
   <!--  -->
@@ -29,11 +30,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollSmoother.min.js"></script>
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/png" href="assets/img/deku.png">
 </head>
 
 <body class="bg-gray-900 font-['Sour_Gummy']">
- <!-- PRELOADER -->
- 
+  <!-- PRELOADER -->
+
   <!-- Navigation Start-->
   <header class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
     <nav class="flex items-center justify-center space-x-4 bg-gray-900/70 backdrop-blur-md border border-cyan-100 rounded-full px-8 py-3 
@@ -110,16 +112,17 @@
                text-transparent">Backend</span>
             <span class="block text-sky-100 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
               Developer</span> -->
-              <span id="author" class="flex-wrap text-sky-100 bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent
+            <span id="author" class="flex-wrap text-sky-100 bg-gradient-to-r from-purple-400 to-cyan-300 bg-clip-text text-transparent
               "></span>
-            </h1>
-            <span class="block text-sm   font-medium text-center mt-4" data-aos="flip-left" data-aos-delay="5000">Hanifan Haqin</span>
+          </h1>
+          <span class="block text-sm   font-medium text-center mt-4" data-aos="flip-left"
+            data-aos-delay="5000">Fullstack & Back-end Developer</span>
           <div class="w-full mt-20">
-            <button type="button" class="animate-bounce rounded-full bg-transparent bg-blur-3xl border border-violet-900 ring-2 ring-cyan-200
+            <button onclick="downloadResume()" id="resume-btn" type="button" class="animate-bounce rounded-full bg-transparent bg-blur-3xl border border-violet-900 ring-2 ring-cyan-200
            text-xl font-light text-white px-4 py-2
             hover:text-sky-100 hover:ring-2 hover:ring-violet-300">
               <span class="transition-transform transform hover:scale-110">
-                 Resume
+                Resume
               </span>
             </button>
           </div>
@@ -135,7 +138,8 @@
     data-aos-delay="200">
     <div class="text-white mx-auto px-8 lg:w-1/2 ">
       <div class="flex space-x-3 mb-10 items-center " data-aos="fade-right" data-aos-delay="500">
-        <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">IfanHaq
+        <h1 class="text-4xl font-bold bg-gradient-to-r from-sky-100 to-violet-300 bg-clip-text text-transparent">
+          ifanhaqq
         </h1>
         <a href="" data-aos="fade-right" data-aos-delay="500">
           <span class="flex  ">
@@ -164,13 +168,13 @@
           data-aos="fade-right" data-aos-delay="1300">
           various</span>
         <span data-aos="fade-right" data-aos-delay="1350">
-          projects on campus where I got to explore my passion for projects on campus where I got to explore my passion
-          for
+          projects on campus where I got to explore my passion for
         </span>
         <span class="text-xl font-medium bg-gradient-to-r from-cyan-100 to-neutral-300 bg-clip-text text-transparent"
           data-aos="fade-right" data-aos-delay="1400">
-          backend and mobile development</span>.
-      </p>
+          Fullstack and Back-end development</span>.
+      </p><br>
+      <p data-aos="fade-right" data-aos-delay="1450">Currently working as Intern Developer @ ASYX Indonesia</p>
     </div>
   </section>
   <!-- About End -->
@@ -189,14 +193,12 @@
     <div class="cards 0 z-10 px-4 w-full   lg:w-1/2 lg:mx-auto" data-aos="fade-right" data-aos-delay="1000">
       <!-- Project 1 -->
       <div class="card   rounded-xl p-4" data-index="0">
-        <div class="card__inner flex-col items-center justify-center" >
+        <div class="card__inner flex-col items-center justify-center">
           <div class="card__content">
-            <h1 class="card__title text-2xl lg:text-3xl font-semibold">Card Title</h1>
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">DRAFLE</h1>
             <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
-              error nam eaque. Eum fuga laborum quos expedita iste saepe
-              similique, unde possimus quia at magnam sed cupiditate?
-              Reprehenderit, harum!
+              This project was created to fulfill the assignment of the project-based-learning course called "Proyek 2"
+              at my university.
             </p>
           </div>
 
@@ -215,18 +217,60 @@
       <div class="card   rounded-xl p-4" data-index="0" data-aos="fade-right" data-aos-delay="1300">
         <div class="card__inner flex-col items-center justify-center">
           <div class="card__content">
-            <h1 class="card__title text-2xl lg:text-3xl font-semibold">Card Title</h1>
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">PORTALGANK</h1>
             <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta
-              error nam eaque. Eum fuga laborum quos expedita iste saepe
-              similique, unde possimus quia at magnam sed cupiditate?
-              Reprehenderit, harum!
+              This project is a project made for the final of a national competition called the 2023 National
+              Polytechnic Informatics Student Competition in E-Government category or commonly referred to as KMIPN.
             </p>
           </div>
 
           <!-- Button to Open Modal -->
           <div class="w-full mb-4 px-2">
-            <a href="project.html?id=1"><button
+            <a href="project.html?id=2"><button
+                class="w-full py-2 px-4 bg-gradient-to-b from-neutral-500 to-slate-700 text-white font-medium rounded-full shadow-lg hover:text-gray-600 hover:from-neutral-400">
+                More
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card   rounded-xl p-4" data-index="0" data-aos="fade-right" data-aos-delay="1300">
+        <div class="card__inner flex-col items-center justify-center">
+          <div class="card__content">
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">PetaniTech Web App</h1>
+            <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
+              This project is a research project in collaboration with lecturers on predicting the planting period of
+              rice plants.
+            </p>
+          </div>
+
+          <!-- Button to Open Modal -->
+          <div class="w-full mb-4 px-2">
+            <a href="project.html?id=3"><button
+                class="w-full py-2 px-4 bg-gradient-to-b from-neutral-500 to-slate-700 text-white font-medium rounded-full shadow-lg hover:text-gray-600 hover:from-neutral-400">
+                More
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card rounded-xl p-4" data-index="0" data-aos="fade-right" data-aos-delay="1300">
+        <div class="card__inner flex-col items-center justify-center">
+          <div class="card__content">
+            <h1 class="card__title text-2xl lg:text-3xl font-semibold">PetaniTech Mobile App</h1>
+            <p class="card__description text-sm lg:text-lg text-gray-600 mt-2">
+              This project is a research project in collaboration with lecturers on predicting the planting period of
+              rice plants.
+            </p>
+          </div>
+
+          <!-- Button to Open Modal -->
+          <div class="w-full mb-4 px-2">
+            <a href="project.html?id=4"><button
                 class="w-full py-2 px-4 bg-gradient-to-b from-neutral-500 to-slate-700 text-white font-medium rounded-full shadow-lg hover:text-gray-600 hover:from-neutral-400">
                 More
               </button>
@@ -242,35 +286,106 @@
   </section>
   <!-- Project End -->
 
+  <!-- Experience -->
+  <section class="experience mb-40 mx-4 sm:mx-0">
+    <div class="w-full sm:w-1/2 mx-auto">
+      <h1 class="text-white text-2xl mb-4 sm:mb-10" data-aos="flip-down" data-aos-delay="600">Work Experiences</h1>
+      <ul class="relative list-none bg-[#090d14] border border-slate-200 rounded-xl p-6" data-index="0"
+        data-aos="fade-right" data-aos-delay="1300">
+        <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:pb-0">
+          <div
+            class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+          </div>
+          <div class="text-white flex-col items-center justify-center">
+            <h1 class="text-xl lg:text-2xl font-semibold">Internship, Software Developer</h1>
+            <p class="text-sm text-gray-500">2025</p>
+            <p class=" text-sm lg:text-lg text-gray-400 mt-2">
+              Software Developer Intern at PT ASYX Indonesia. Working on Financial Supply Chain Management (FSCM)
+              project(s) as a Full-stack Developer. Utilizing Java Spring Boot and React JS as the technology to develop
+              and maintain microservice projects.
+            </p>
+          </div>
+        </li>
+        <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:pb-0">
+          <div
+            class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+          </div>
+          <div class="text-white flex-col items-center justify-center">
+            <h1 class="text-xl lg:text-2xl font-semibold">Freelance, Technical Writer</h1>
+            <p class="text-sm text-gray-500">2024-2025</p>
+            <p class=" text-sm lg:text-lg text-gray-400 mt-2">
+              Technical Writer of Inventory Perumdam Web Apps (Perumdam Tirta Darma Ayu, Indramayu Regency). Created an
+              user manuals for the employees of Perumdam Tirda Darma Ayu.
+            </p>
+          </div>
+        </li>
+        <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:pb-0">
+          <div
+            class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+          </div>
+          <div class="text-white flex-col items-center justify-center">
+            <h1 class="text-xl lg:text-2xl font-semibold">Freelance, Mobile Developer</h1>
+            <p class="text-sm text-gray-500">2024</p>
+            <p class=" text-sm lg:text-lg text-gray-400 mt-2">
+              Mobile Developer of Mobile Apps E-Forensics Arwana Fish (Ministry and Fisheries of Indonesia).
+            </p>
+            <p class="text-sm lg:text-lg text-gray-400 mt-2">Created an early version of the app and the logic in it
+              using React Native Technology. </p>
+            <p class="text-sm lg:text-lg text-gray-400 mt-2">Slicing Figma design using Typescript React (TSX) with
+              React Native StyleSheet. </p>
+            <p class="text-sm lg:text-lg text-gray-400 mt-2">Developed a self-contained database with SQLite. </p>
+            <p class="text-sm lg:text-lg text-gray-400 mt-2">Developed a print-to-file feature into a PDF file using
+              expo-print APIs.</p>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Tech Stack Start-->
   <section id="tech-stack " class="flex  justify-center items-center bg-gray-900 md:w-1/2 mx-auto "
     data-aos="fade-right" data-aos-delay="500">
 
     <div class="w-full px-4 ">
       <p class="text-slate-400">Developing Tools</p>
-      <h1 class="text-white text-2xl lg:mb-10" data-aos="flip-down" data-aos-delay="600">Expertise</h1>
+      <h1 class="text-white text-2xl mb-4 sm:mb-10" data-aos="flip-down" data-aos-delay="600">Expertise</h1>
 
       <ul class="border border-slate-400 rounded-xl relative mt-1 my-4 px-2 py-4 list-none">
         <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
           <div
             class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
           </div>
-          <div class="text-white">Backend Development</div>
-          <div class="flex  flex-wrap mt-5  text-slate-200">
+          <div class="text-white">Programming Languages</div>
+          <div class="flex flex-wrap mt-5  text-slate-200">
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Laravel
+              Javascript/Typescript
             </span>
+            <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+              Java
+            </span>
+            <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+              PHP
+            </span>
+          </div>
+        </li>
+        <li class="relative pl-6 ml-2 pb-6 border-l border-[#abaaed] last:border-0 last:pb-0">
+          <div
+            class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
+          </div>
+          <div class="text-white">Fullstack & Back-end Development</div>
+          <div class="flex  flex-wrap mt-5  text-slate-200">
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
               Java Spring Boot
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              NodeJS
+              Hapi JS
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Express Js
+              Express JS
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Prisma ORM
+              Laravel
             </span>
           </div>
         </li>
@@ -295,10 +410,13 @@
           <div class="text-white">Frontend Development</div>
           <div class="flex  flex-wrap mt-5  text-slate-200">
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Flutter
+              React JS
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              React Native
+              Tailwind CSS
+            </span>
+            <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+              Bootstrap 5
             </span>
           </div>
         </li>
@@ -306,16 +424,22 @@
           <div
             class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
           </div>
-          <div class="text-white">Data Base</div>
+          <div class="text-white">Databases</div>
           <div class="flex  flex-wrap mt-5  text-slate-200">
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              PostgreSql
+              PostgreSQL
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Laragon
+              MySQL
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Xampp
+              NoSQL
+            </span>
+            <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+              Prisma ORM
+            </span>
+            <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
+              Spring Data JPA
             </span>
           </div>
         </li>
@@ -323,16 +447,16 @@
           <div
             class="absolute w-[15px] h-[15px] bg-white border border-[#4e5ed3] rounded-full -left-[10px] shadow-[3px_3px_0px_#bab5f8]">
           </div>
-          <div class="text-white">Service</div>
+          <div class="text-white">Tools</div>
           <div class="flex  flex-wrap mt-5  text-slate-200">
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
               Postman
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Laragon
+              Docker
             </span>
             <span class="bg-slate-700 rounded-full me-2 mb-2 px-2 py-1">
-              Xampp
+              DBeaver
             </span>
           </div>
         </li>
@@ -354,7 +478,7 @@
       </div>
       <div class="  ">
         <!-- email -->
-        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="800">
+        <a href="mailto:hanifanhaq@gmail.com" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="800">
           <div class="  hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -375,7 +499,7 @@
           </div>
         </a>
         <!-- githuub -->
-        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1000">
+        <a href="https://github.com/ifanhaqq" target="_blank" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1000">
           <div class=" hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -399,7 +523,7 @@
           </div>
         </a>
         <!-- linkedin -->
-        <a href="" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1200">
+        <a href="https://www.linkedin.com/in/hanifan-haqin-058889281/" target="_blank" class="w-full lg:1/2" data-aos="fade-right" data-aos-delay="1200">
           <div class=" hover:border hover:border-slate-200 rounded-xl mx-2  py-8">
             <span class="relative flex flex-col items-center gap-8 duration-700 group md:gap-16 py-10">
               <span class="absolute w-px h-2/3 bg-gradient-to-b from-violet-500 via-violet-500/50 to-transparent"
@@ -428,25 +552,15 @@
   </section>
   <!-- Contact End -->
 
-<!-- Github Contributions Start -->
- <section id="git-commit" class="h-screen bg-gray-900 px-4 mb-36 my-36 flex items-center justify-center mx-auto md:w-1/2">
-<div class="w-full bg-white px-2 py-4 rounded-xl">
-  <h1 class="text-center font-['Zen_Dots'] text-xl text-slate-600 mb-4">Git Hub Contributions</h1>
-  <img src="https://ghchart.rshah.org/ifanhaqq" alt="GitHub Contributions">
-
-</div>
- </section>
-<!-- Github Contributions End -->
-
-<!-- Footer Start -->
+  <!-- Footer Start -->
   <footer class="flex items-center justify-center mx-auto px-4 mb-4 md:w-1/2 text-center ">
     <div class="w-full rounded-md px-4 bg-white/20 backdrop-blur-xl  text-slate-200">
       <p class="text-sm font-light font-['Zen_Dots']">Made with 💕 by his FE spouse</p>
     </div>
   </footer>
-<!-- Footer End -->
+  <!-- Footer End -->
 
-  <!-- Script --> 
+  <!-- Script -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://unpkg.com/aatjs/dist/aat.min.js"></script>
   <script src="assets/main.js">  </script>
@@ -471,9 +585,9 @@
 
     gsap.fromTo(
       '#author', { repeat: 3, repeatDelay: 1, yoyo: true },
-      { duration: 3, text: "Backend Developer" }
+      { duration: 3, text: "Hanifan Haqin" }
     )
-    </script>
+  </script>
 </body>
 
 </html>
